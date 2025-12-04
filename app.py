@@ -46,7 +46,7 @@ st.markdown("""
 @st.cache_data
 def load_data():
     try:
-        df = pd.read_excel('/Users/samuelmarzano/Documentos/Ciencia_de_Datos/Cuarto/GPR/PRACTICAS/DATOS/COMPLETOS/DATA.xlsx')
+        df = pd.read_excel('DATA.xlsx')
     except FileNotFoundError:
         st.error("No se encontró el archivo 'DATA.xlsx - aggregated_COMPLETOS.csv'.")
         return None
